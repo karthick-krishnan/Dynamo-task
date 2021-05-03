@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Dynamo Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+1. [Purpose](#purpose)
+2. [Requirements](#requirements)
+3. [Getting Started](#getting-started)
+4. [Application Structure](#application-structure)
+5. [Application Structure](#client-application-structure)
+7. [URL WHICH PROVIDES THE INTIAL ROUTE WHICH IS LOGIN](#component-which-logs-in)
+8. [URL WHICH PROVIDES TO SIGNUP or REGISTER](#component-which-registers-users)
+9. [URL WHICH PROVIDES THE LIST OF LAUNCHES](#component-which-provides-launches)
+10. [URL WHICH PROVIDES THE LIST LAUNCHES BY ID](#component-which-provides-launches-by-ids)
 
-In the project directory, you can run:
 
-### `npm start`
+## Purpose
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It is a task to develop a single page application with displaying all Rocket launches and its details
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Requirements
 
-### `npm test`
+- node
+- npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get Started please follow the below Requirements
+[requirements](#requirements), you can follow these steps to get the project up and running:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```window
+$ git clone "https://github.com/karthick-krishnan/Dynamo-task.git"
+$ npm install                      # Install all the dependencies
+$ npm start                        # Compile and launch the application
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Application Structure
+```
+├── public                  # Main module which contains all html,css and javascript files
+├── src                     # Main module which contains all the React/Redux implimentation with routing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+## client Application Structure
+```
+├── components               # module which contains all components
+├── actions                  # module which contains the business logics/actions to pass through reducers
+├── reducers                 # Module which contains all the reducers which receive the state
+├── store                    # Module which contains all the stores which recieves all the state from reducers
+├── utils                    # Module which has the utilities of the project
+├── assests                  # Module which has all the images
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## URL WHICH PROVIDES THE INTIAL ROUTE WHICH IS LOGIN
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **::** <http://localhost:3000/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Login Module which provides the user to login. The datas are saved through firebase authentication techniques
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## URL WHICH PROVIDES TO SIGUP or REGISTER
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **::** <http://localhost:3000/register>
 
-### Code Splitting
+  ```json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Register Module which provides the user to register. The datas are saved through firebase authentication techniques
+  
+  ```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+## URL WHICH PROVIDES THE LIST OF LAUNCHES
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **::** <http://localhost:3000/launches>
 
-### Advanced Configuration
+  ```json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+launches component which provides the list of rocket launchers list and by clicking it you can view the details.
+  
+  ```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+## URL WHICH PROVIDES THE LIST OF LAUNCHES
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **::** <http://localhost:3000/launches/1>
+
+  ```json
+
+launches component with id which provides the details of rocket launchers list over here we can view the video of launchers
+  ```
+  
+  
+  
+
+## Get requests API Exceptions
+
+Error code |                         Error Message
+---------- | :-----------------------------------------------------------:
+400        |                    Invalid Input
+401        |                    Unauthorized
+403        |                    User is not authorized to access this resource with an explicit deny
+500        |                    FAILED
+
+
+
+# Tables
+No tables are required
