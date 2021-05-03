@@ -1,0 +1,27 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar .header {
+    margin-left: 22px;
+    font-size: 38px;
+}
+
+.toolbar .icons {
+    margin-right: 22px;
+    font-size: 22px;
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    margin: 100px;
+    border: 1px solid;
+}
+
+.logout-container{
+    margin-left: 93%;
+}
+

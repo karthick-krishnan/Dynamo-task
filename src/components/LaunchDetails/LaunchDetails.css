@@ -1,0 +1,22 @@
+.header {
+    font-size: 38px;
+    margin-left: 22px;
+}
+
+.rocket-details {
+    font-size: 22px;
+    margin-bottom: 18px;
+    margin-top: 28px;
+    margin-left: 42px;
+}
+
+.payloads {
+    margin-left: 42px;
+    font-size: 22px;
+}
+
+.payload {
+    margin-bottom: 22px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
